@@ -1,3 +1,5 @@
+package Week1;
+
 public class Student {
     String name="Manasa";
     public String getName() {
@@ -10,4 +12,5 @@ public class Student {
         System.out.println(" "+stu.getName());
     }
 }
+
 
