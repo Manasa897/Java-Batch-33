@@ -10,3 +10,4 @@ public class Student {
         System.out.println(" "+stu.getName());
     }
 }
+
