@@ -1,4 +1,4 @@
-package Week1;
+package oops;
 
 public class Student {
     String name="Manasa";
