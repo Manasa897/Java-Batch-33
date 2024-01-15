@@ -24,7 +24,7 @@ public class Product {
 
         double totalPrice=p.getPrice(quantity);
 
-        System.out.println(""+quantity + totalPrice );
+        System.out.println( quantity + " " +totalPrice );
 
 
 
