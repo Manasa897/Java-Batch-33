@@ -1,3 +1,4 @@
+package oops;
 public class Animal {
     public void makeSound() {
         System.out.println("Some generic animal sound");
@@ -18,6 +19,6 @@ class PolymorphismExample {
         Animal myAnimal = new Dog();
         myAnimal.makeSound();
 
-        System.out.println(myAnimal); // Outputs "This is a Dog object"
+        System.out.println(" Dog  "+myAnimal); // Outputs "This is a Dog object"
     }
 }
