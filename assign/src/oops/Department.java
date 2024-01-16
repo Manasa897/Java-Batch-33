@@ -6,7 +6,7 @@ abstract class Department {
 }
 class SubDepartment extends Department{
     private int DepartmentSize;
-
+u
     public SubDepartment(int DepartmentSize){
         this.DepartmentSize=DepartmentSize;
     }
