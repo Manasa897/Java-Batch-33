@@ -1,5 +1,5 @@
 package arrays;
-public class BubbleSort {
+public class Sort {
     public static void main(String[] args) {
         int[] arr = {6, 2, 1, 5, 11};
         System.out.println("Original Array:");
