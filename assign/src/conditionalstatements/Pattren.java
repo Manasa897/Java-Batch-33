@@ -1,4 +1,4 @@
-package ConditionalStatements;
+package conditionalstatements;
 
 public class Pattren {
     public static void main(String[] args) {

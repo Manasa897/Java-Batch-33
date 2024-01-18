@@ -1,6 +1,4 @@
-package ConditionalStatements;
-
-import java.util.Scanner;
+package conditionalstatements;
 
 public class Fibonacci {
     public static void main(String[] args) {

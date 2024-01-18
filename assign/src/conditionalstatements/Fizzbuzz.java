@@ -1,4 +1,4 @@
-package ConditionalStatements;
+package conditionalstatements;
 public class Fizzbuzz {
     public static void main(String[] args) {
         int n = 100;
