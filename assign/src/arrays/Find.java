@@ -3,7 +3,7 @@ package arrays;
 public class Find {
     public static void main(String[] args) {
 
-        int number[] = {-1, -4, 10, 15, 253};
+        int number[] = {-1, -4, 10, 9, 59};
 
         int largest = number[0];
         int smallest = number[0];
