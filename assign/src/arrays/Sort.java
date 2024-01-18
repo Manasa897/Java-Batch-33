@@ -1,36 +1,37 @@
 package arrays;
 public class Sort {
-    public static void main(String[] args) {
-        int[] arr = {6, 2, 1, 5, 11};
-        System.out.println("Original Array:");
-        printArray(arr);
-        bubbleSort(arr);
-        System.out.println("\nSorted Array:");
-        printArray(arr);
-    }
-    public static void bubbleSort(int[] arr) {
+    static void Sort(int[] arr) {
         int n = arr.length;
-        boolean swapped;
-        for (int i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    // Swap arr[j] and arr[j + 1]
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
+        int temp = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j < (n - i); j++) {
+                if (arr[j - 1] > arr[j]) {
+                    // swap elements
+                    temp = arr[j - 1];
+                    arr[j - 1] = arr[j];
+                    arr[j] = temp;
                 }
-            }
-            if (!swapped) {
-                break;
+
             }
         }
+
     }
-    public static void printArray(int[] arr) {
-        for (int num : arr) {
-            System.out.print(num + " ");
+
+    public static void main(String[] args) {
+        int arr[] = { 7, 1, 10, 2, 5, 9, 3, 8, 4, 6 };
+
+        System.out.println("Array Before Bubble Sort");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
+
+        Sort(arr);// sorting array elements using bubble sort
+
+        System.out.println("Array After Bubble Sort");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
     }
 }
