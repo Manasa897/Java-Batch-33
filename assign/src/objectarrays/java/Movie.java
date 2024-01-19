@@ -1,7 +1,4 @@
 package objectarrays.java;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 class Movie {
     private int yearReleased;
     private double rating;
