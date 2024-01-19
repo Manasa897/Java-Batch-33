@@ -8,7 +8,7 @@ public class Find {
         int largest = number[0];
         int smallest = number[0];
         for (int i = 0; i < number.length; i++) {
-            if (number[i] > largest) {
+            if (number[i] > largest) {//current value
 
                 largest = number[i];
             } else if (number[i] < smallest) {
@@ -20,3 +20,4 @@ public class Find {
         System.out.println(smallest);
     }
 }
+
