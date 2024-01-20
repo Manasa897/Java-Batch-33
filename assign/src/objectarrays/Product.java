@@ -1,6 +1,4 @@
-package objectarrays.java;
-
-import java.util.*;
+package objectarrays;
 
 class Product implements Comparable<Product> {
     private double weight;

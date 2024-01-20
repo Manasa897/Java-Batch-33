@@ -1,4 +1,4 @@
-package objectarrays.java;
+package objectarrays;
 
 public class Person {
     private int height;

@@ -1,4 +1,4 @@
-package objectarrays.java;
+package objectarrays;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package objectarrays.java;
+package objectarrays;
 class Movie {
     private int yearReleased;
     private double rating;
