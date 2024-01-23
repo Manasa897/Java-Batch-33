@@ -1,30 +1,33 @@
 package strings;
-
-import com.sun.source.tree.ReturnTree;
-
 import java.util.Arrays;
-public class Anagram {
-    public static void main(String[] args) {
-        String s1 = "SILENT";
-        String s2 = "LISTEN";
-        char c1[] = s1.toCharArray();
-        char c2[] = s2.toCharArray();
-        if (c1.length != c2.length) {
-            System.out.println("Not an Anagram");
-        }
-        Arrays.sort(c1);
-        Arrays.sort(c2);
-        for (int i = 0; i < c1.length; i++) {
-            if (c1[i] != c2[i]) {
-                System.out.println("not an Anagram");
-                System.exit(0);
-            }
-        }
-        System.out.println("Anagram");
-        System.exit(0);
-    }
 
-    public static boolean areAnagrams(String listen, String silent) {
-        return false;
+public class Anagram {
+    public static boolean anagrams(String str1, String str2) {
+        str1 = str1.replaceAll("\\s", "").toLowerCase();
+        str2 = str2.replaceAll("\\s", "").toLowerCase();
+
+        if (str1.length() != str2.length())
+        {
+            return false;
+        }
+
+        char[] charArray1 = str1.toCharArray();
+        char[] charArray2 = str2.toCharArray();
+
+        Arrays.sort(charArray1);
+        Arrays.sort(charArray2);
+
+        return Arrays.equals(charArray1, charArray2);
+    }
+    public static void main(String[] args) {
+        String inp1="Madam Curie";
+        String inp2="Radium came";
+
+        if (anagrams(inp1, inp2)) {
+            System.out.println("anagram.");
+        }
+        else {
+            System.out.println("not anagram.");
+        }
     }
 }

@@ -1,16 +1,23 @@
 package strings;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import strings.Anagram;
 
-import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-class AnagramTest {
-
+public class AnagramTest {
     @Test
-    void test() {
-        boolean exp = true;
-        Assert.assertEquals(true,true);
+    public void testAreAnagrams() {
+        assertTrue(Anagram.anagrams("listen", "silent"));
+        assertFalse(Anagram.anagrams("hello", "world"));
+        assertFalse(Anagram.anagrams("hello", "holla"));
+        assertTrue(Anagram.anagrams("", ""));
     }
-
+    @Test
+    public void testareAna(){
+        assertTrue(Anagram.anagrams("vijaya", "ayvija"));
+        assertFalse(Anagram.anagrams("hello", "world"));
+        assertFalse(Anagram.anagrams("hel", "holla"));
+    }
 }
