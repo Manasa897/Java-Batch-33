@@ -1,7 +1,7 @@
 package list;
 
 import java.util.ArrayList;
-public class LastObject {
+public class RemoveLastObject {
     public static void main(String[] args) {
         ArrayList<String> inp = new ArrayList<>();
         inp.add("adding 1st element");
